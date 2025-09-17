@@ -17,7 +17,7 @@ connectDB();
 // Middlewares globales
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://evaluacionexpress.onrender.com/'] // Reemplazar con tu dominio en producción
+    ? ['https://evaluacionexpress.onrender.com'] // Reemplazar con tu dominio en producción
     : ['http://localhost:3000', 'http://localhost:3001', 'http://127.0.0.1:5500'],
   credentials: true
 }));
